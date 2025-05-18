@@ -1,32 +1,98 @@
-Netflix Clone
-A full-stack Netflix clone application featuring a backend API and a frontend UI.
+🎬 Netflix Clone
 
-Project Structure
-netflix-api: Backend API built with Node.js and Express.js.
+Netflix Clone is a full-stack OTT platform built using the MERN stack. It replicates the core functionality of Netflix, offering a seamless streaming experience with user authentication, genre-based browsing, and interactive UI/UX. This project demonstrates the integration of front-end design, back-end APIs, and database operations for a media streaming service.
 
-netflix-ui: Frontend UI built with React.js.
+📚 Table of Contents
+System Architecture
 
-Features
-User authentication and authorization
+Front-end
 
-Browse and search for movies and TV shows
+Back-end
 
-Responsive design for various devices
+API Design
 
-Installation
-Clone the repository:
+Deployment
 
-git clone https://github.com/MAYANK-AGARWAL-123/Netflix-Clone.git
-cd Netflix-Clone
-Set up the backend:
+🏗️ System Architecture
+The application follows a classic client-server architecture:
 
-cd netflix-api
-npm install
-npm start
-Set up the frontend:
+Front-end: Built with React.js using TMDB APIs and Redux for state management.
 
-cd ../netflix-ui
-npm install
-npm start
+Back-end: Node.js and Express handle user auth and media logic.
 
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+Database: Firebase (or MongoDB, if used) stores user data, preferences, and history.
+
+🎨 Front-end
+Developed with React.js, Redux, and Tailwind CSS, the front end offers an intuitive interface that mimics Netflix:
+
+Key Features
+User Authentication: Secure login/signup with Firebase Auth.
+
+Movie Listings: Fetches live content using TMDB API.
+
+Genre-based Browsing: Organized media by categories.
+
+Banner & Trailers: Auto-playing trailers and banners.
+
+Responsive UI: Works seamlessly on all devices.
+
+Tools & Libraries
+React.js, Redux Toolkit, React Router
+
+Tailwind CSS
+
+TMDB API
+
+Axios
+
+🛠️ Back-end
+The back-end handles user auth and media session logic. If Firebase is used, it abstracts backend needs.
+
+Key Features
+JWT-based authentication (if custom auth is used)
+
+User session management
+
+Favorites and watchlist management
+
+Technologies Used
+Node.js, Express.js
+
+Firebase Auth / MongoDB
+
+Bcrypt, JWT (optional)
+
+📡 API Design
+The app uses TMDB's API for fetching movies and shows. If custom APIs are used:
+
+Sample Endpoints
+POST /api/auth/signup – Register new users
+
+POST /api/auth/login – Authenticate and return token
+
+GET /api/movies – Fetch movie list
+
+GET /api/movies/:id – Fetch movie by ID
+
+POST /api/user/favorites – Add to favorites
+
+TMDB endpoints are used primarily for live content.
+
+🚀 Deployment
+Hosting
+Front-end: Vercel
+
+Back-end: Render or Railway
+
+Media API: TMDB
+
+Auth/Database: Firebase / MongoDB Atlas
+
+This architecture provides scalability and performance with minimal cost.
+
+🙌 Acknowledgements
+TMDB API
+
+Firebase
+
+Vercel
