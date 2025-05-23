@@ -1,6 +1,6 @@
 # Netflix Clone MERN
 
-[![Demo](https://netflix-clone-nine-indol-17.vercel.app/login)
+[Demo](https://netflix-clone-nine-indol-17.vercel.app/login)
   
 ## Overview
 
